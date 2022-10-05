@@ -1,0 +1,39 @@
+def main():
+    value = float(input())
+    bank_count, coin_count = 0, 0
+
+    while (value >= 1000):
+        value -= 1000
+        bank_count += 1
+    while (value >= 500):
+        value -= 500
+        bank_count += 1
+    while (value >= 100):
+        value -= 100
+        bank_count += 1
+    while (value >= 50):
+        value -= 50
+        bank_count += 1
+    while (value >= 20):
+        value -= 20
+        bank_count += 1
+    while (value >= 10 and value < 20):
+        value -= 10
+        coin_count += 1
+    while (value >= 5 and value < 10):
+        value -= 5
+        coin_count += 1
+    while (value >= 2 and value < 5):
+        value -= 2
+        coin_count += 1
+    while (value >= 1 and value < 2):
+        value -= 1
+        coin_count += 1
+    while (value >= 0.50 and value < 1):
+        value -= 0.50
+        coin_count += 1
+    while (value >= 0.25 and value < 0.50):
+        value -= 0.25
+        coin_count += 1
+    print(bank_count)
+    print(coin_count)
